@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Move to backend folder
-        working-directory: ./backend
+        working-directory: ./SQA-metrics-project
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
               -Dsonar.projectKey=... \
               -Dsonar.organization=... \

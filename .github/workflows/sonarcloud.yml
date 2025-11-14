@@ -10,12 +10,6 @@ jobs:
     name: Build and analyze
     runs-on: ubuntu-latest
     steps:
-      - name: Move to backend folder
-        working-directory: SQA-metrics-project
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
-              -Dsonar.projectKey=... \
-              -Dsonar.organization=... \
-              -Dsonar.host.url=https://sonarcloud.io
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis

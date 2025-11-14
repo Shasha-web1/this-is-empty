@@ -4,9 +4,7 @@ import java.util.List;
 import java.util.Objects;
 
 public final class QualityMetrics {
-    private QualityMetrics() {
-        //empty private constructor
-    }
+    private QualityMetrics() {}
 
     public static double defectDensity(int defects, double kloc) {
         validateNonNegative(defects, "defects");
